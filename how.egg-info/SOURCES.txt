@@ -1,3 +1,4 @@
+README.md
 how.py
 setup.py
 how.egg-info/PKG-INFO
