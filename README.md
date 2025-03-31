@@ -17,64 +17,49 @@ du -sh | sort -h
 * Lightweight and dependency-minimal (only requires requests).  
 * Configurable via a local file (\~/.how\_config) for your xAI API key.  
 * Installable system-wide with a simple setup process.
-
-## **Prerequisites**
-
-* **Python 3**: Available on most Linux systems (check with python3 \--version).  
-* **pip**: For installing dependencies (install with sudo apt-get install python3-pip on Debian/Ubuntu or equivalent).  
-* **xAI API Key**: Sign up at [xAI](https://x.ai) and generate a key from the [xAI Console API Keys Page](https://console.x.ai).
-
+ 
 ## **Installation**
 
-**Clone or Download the Repository**  
-
+**1. Install from PyPI**  
+ 
 ```bash
 pip3 install how --user
 ```
    
+This installs how to \~/.local/bin, which should be in your PATH. If not, add it:  
 ```bash
-   pip3 install setuptools
+export PATH="$HOME/.local/bin:$PATH"` 
 ```
 
-3. **Install the Application** Run the setup script to install how for your user:  
-
+2. **Set Your API Key** Configure your xAI API key:   
 ```bash
-   python3 setup.py install --user
+how --key "your-xai-api-key-here"
 ```
-    This installs how to \~/.local/bin, which should be in your PATH. If not, add it:  
-```bash
-   export PATH="$HOME/.local/bin:$PATH"` 
-```
-    Make it permanent by adding that line to \~/.bashrc or \~/.zshrc.  
-4. **Set Your API Key** Configure your xAI API key:   
-```bash
-   how --key "your-xai-api-key-here"
-```
-    This saves the key to \~/.how\_config.
+This saves the key to \~/.how\_config.
 
 ## **Usage**
 
 * **Ask a Question**   
 ```bash
-  how --q "your question here"
+how --q "your question here"
 ```
 Example:   
 ```bash
-  how --q "how do I list all running processes?"
+how --q "how do I list all running processes?"
 ```
 Output:   
 ```bash
-  "Use this command: ps aux"
+"Use this command: ps aux"
 ```
 
 * **Set or Update API Key**   
 ```bash
-  how --key "new-xai-api-key"
+how --key "new-xai-api-key"
 ```
 
 * **Check Help**   
 ```bash
-  how --help
+how --help
 ```
 
 ## **Troubleshooting**
@@ -110,7 +95,7 @@ Feel free to fork this project, submit issues, or send pull requests. Ideas for 
 
 ## **License**
 
-This project is open-source under the MIT License (or specify your preferred license).
+This project is open-source under no license.
 
 ## **Credits**
 
