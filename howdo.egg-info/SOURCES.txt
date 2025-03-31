@@ -1,0 +1,9 @@
+README.md
+how.py
+setup.py
+howdo.egg-info/PKG-INFO
+howdo.egg-info/SOURCES.txt
+howdo.egg-info/dependency_links.txt
+howdo.egg-info/entry_points.txt
+howdo.egg-info/requires.txt
+howdo.egg-info/top_level.txt

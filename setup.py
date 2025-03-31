@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name="how",                     # Package name (must be unique on PyPI)
+    name="howdo",                     # Package name (must be unique on PyPI)
     version="0.1.0",                # Initial version
     author="thegje",                # Your GitHub username or name
     author_email="thegje@gmail.com", # Your email
