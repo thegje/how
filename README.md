@@ -29,30 +29,26 @@ du -sh | sort -h
 **Clone or Download the Repository**  
 
 ```bash
-`git clone <repository-url>`
+pip3 install how --user
 ```
-
-1. `cd how`  
-    Or download and extract the zip file.  
-2. **Install Dependencies** Install setuptools if not already present:  
-
+   
 ```bash
-   `pip3 install setuptools`
+   pip3 install setuptools
 ```
 
 3. **Install the Application** Run the setup script to install how for your user:  
 
 ```bash
-   `python3 setup.py install --user`  
+   python3 setup.py install --user
 ```
     This installs how to \~/.local/bin, which should be in your PATH. If not, add it:  
 ```bash
-   `export PATH="$HOME/.local/bin:$PATH"`  
+   export PATH="$HOME/.local/bin:$PATH"` 
 ```
     Make it permanent by adding that line to \~/.bashrc or \~/.zshrc.  
 4. **Set Your API Key** Configure your xAI API key:   
 ```bash
-   `how --key "your-xai-api-key-here"`  
+   how --key "your-xai-api-key-here"
 ```
     This saves the key to \~/.how\_config.
 
@@ -60,25 +56,25 @@ du -sh | sort -h
 
 * **Ask a Question**   
 ```bash
-  `how --q "your question here"`  
+  how --q "your question here"
 ```
 Example:   
 ```bash
-  `how --q "how do I list all running processes?"`  
+  how --q "how do I list all running processes?"
 ```
 Output:   
 ```bash
-  `"Use this command: ps aux"`
+  "Use this command: ps aux"
 ```
 
 * **Set or Update API Key**   
 ```bash
-  `how --key "new-xai-api-key"`
+  how --key "new-xai-api-key"
 ```
 
 * **Check Help**   
 ```bash
-  `how --help`
+  how --help
 ```
 
 ## **Troubleshooting**
@@ -94,14 +90,14 @@ Remove the application:
 
 bash  
 ```bash
-`pip3 uninstall how`
+pip3 uninstall how
 ```
 
 Delete the config file (optional):
 
 bash  
 ```bash
-`rm ~/.how_config`
+rm ~/.how_config
 ```
 
 ## **Contributing**
@@ -118,6 +114,6 @@ This project is open-source under the MIT License (or specify your preferred lic
 
 ## **Credits**
 
-Built by Gregory Ellis using xAI’s Grok API.
+Built by Gregory Ellis.
  
 
