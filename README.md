@@ -9,7 +9,7 @@ how --q "find size of files in directory and list by file size"
 
 Response:
 ```bash
-"The following command will list file sizes in order: du -sh | sort -h"
+"du -sh | sort -h"
 ```
 
 ## **Features**
