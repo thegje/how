@@ -27,56 +27,59 @@ du -sh | sort -h
 ## **Installation**
 
 **Clone or Download the Repository**  
- bash  
-CollapseWrapCopy  
+
+```bash
 `git clone <repository-url>`
+```
 
 1. `cd how`  
     Or download and extract the zip file.  
 2. **Install Dependencies** Install setuptools if not already present:  
-    bash  
-   CollapseWrapCopy  
+
+```bash
    `pip3 install setuptools`
+```
 
 3. **Install the Application** Run the setup script to install how for your user:  
-    bash  
-   CollapseWrapCopy  
+
+```bash
    `python3 setup.py install --user`  
+```
     This installs how to \~/.local/bin, which should be in your PATH. If not, add it:  
-    bash  
-   CollapseWrapCopy  
+```bash
    `export PATH="$HOME/.local/bin:$PATH"`  
+```
     Make it permanent by adding that line to \~/.bashrc or \~/.zshrc.  
-4. **Set Your API Key** Configure your xAI API key:  
-    bash  
-   CollapseWrapCopy  
+4. **Set Your API Key** Configure your xAI API key:   
+```bash
    `how --key "your-xai-api-key-here"`  
+```
     This saves the key to \~/.how\_config.
 
 ## **Usage**
 
-* **Ask a Question**  
-   bash  
-  CollapseWrapCopy  
+* **Ask a Question**   
+```bash
   `how --q "your question here"`  
-   Example:  
-   bash  
-  CollapseWrapCopy  
+```
+Example:   
+```bash
   `how --q "how do I list all running processes?"`  
-   Output:  
-   text  
-  CollapseWrapCopy  
+```
+Output:   
+```bash
   `"Use this command: ps aux"`
+```
 
-* **Set or Update API Key**  
-   bash  
-  CollapseWrapCopy  
+* **Set or Update API Key**   
+```bash
   `how --key "new-xai-api-key"`
+```
 
-* **Check Help**  
-   bash  
-  CollapseWrapCopy  
+* **Check Help**   
+```bash
   `how --help`
+```
 
 ## **Troubleshooting**
 
@@ -90,14 +93,16 @@ CollapseWrapCopy
 Remove the application:
 
 bash  
-CollapseWrapCopy  
+```bash
 `pip3 uninstall how`
+```
 
 Delete the config file (optional):
 
 bash  
-CollapseWrapCopy  
+```bash
 `rm ~/.how_config`
+```
 
 ## **Contributing**
 
@@ -113,6 +118,6 @@ This project is open-source under the MIT License (or specify your preferred lic
 
 ## **Credits**
 
-Built with ❤️ by Gregory Ellis using xAI’s Grok API.
+Built by Gregory Ellis using xAI’s Grok API.
  
 
