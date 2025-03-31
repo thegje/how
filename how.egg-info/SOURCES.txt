@@ -1,0 +1,8 @@
+how.py
+setup.py
+how.egg-info/PKG-INFO
+how.egg-info/SOURCES.txt
+how.egg-info/dependency_links.txt
+how.egg-info/entry_points.txt
+how.egg-info/requires.txt
+how.egg-info/top_level.txt
